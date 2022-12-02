@@ -1,3 +1,7 @@
 :root{
-    --colorred:red;
+    --text_header:#000;
+    --text: #000;
+    --bg_header:#fff;
+    --color_hover:red;
+    --text:#fff;
 }

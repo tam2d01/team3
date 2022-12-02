@@ -1,16 +1,63 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link rel="stylesheet" href="/Css/reset.css">
-        <link rel="stylesheet" href="/Css/var.css">
-        <link rel="stylesheet" href="/Css/global.css">
-        <link rel="stylesheet" href="/Css/style.css">
-    </head>
-    <body>
-        <h1>ND</h1>
-    </body>
-    </html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/font-icon/font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="Css/global.css">
+    <link rel="stylesheet" href="/Css/reset.css">
+    <link rel="stylesheet" href="/Css/style.css">
+    <link rel="stylesheet" href="/Css/var.css">
+</head>
+<body>
+    <!--header logo-->
+    <header>
+        <div class="logo">
+            <a target="_top" href="#" ><img src="./assets/img/logo/0c6690ba4d044f55b55e391cfd134c97.png" border="1"></a>
+        </div>
+        <a href="#" class="icon-bars" onclick="myBars()">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </a>
+        <div class="menus" id="nav-menus">
+            <a href="#" title="Home">Home</a>
+            <a href="#" title="News">News</a>
+            <a href="#" title="About">About</a>
+            <a href="#" title="contact">contact</a>
+        </div>
+        <!----- header search -->
+        <div class="wrap">
+            <form action="" class="search" method="#">
+                <input type="text" class="searchTerm" placeholder="What do you want to search?">
+                <a href="#" class="search-item">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </a>
+            </form>
+        </div>
+        <!--header icon-->
+        <div class="menus-icon">
+            <span class="icon-item">
+                <a href="#" class="icon-thumbs" onclick="myThumbs()">
+                    <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                </a>
+                <a href="#" class="icon-shopping" onclick="myShopping()">
+                    <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                </a>
+                <a href="#" class="icon-user" onclick="myUse()">
+                    <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                </a>
+            </span>   
+        </div>    
+    </header>
+    <main class="home">
+        <div class="home__content">
+            <p></p>
+        </div>
+    </main>
+    <footer>
+    </footer>
+</body>
+    <!--js -->
+    <script src="./JS/main.js"></script>
+</html>
