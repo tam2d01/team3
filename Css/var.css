@@ -1,7 +1,7 @@
 :root{
     --text_header:#000;
     --text: #000;
-    --bg_header:#fff;
+    --text-wh:#ffff;
+    --bg_header:rgba(255,255,255, 0.3);
     --color_hover:red;
-    --text:#fff;
-}
+    }
