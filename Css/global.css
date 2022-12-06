@@ -123,6 +123,7 @@ footer{
 .footer .footer__wrapper .noi-dung.about{
     width: 40%;
 }
+/* Noi Dung About Us */
 .noi-dung.about>h2{
     position: relative;
     font-size: 25px;
@@ -141,6 +142,9 @@ footer{
 }
 .noi-dung.about p{
     color: var(--text);
+}
+.copyright-text{
+    padding: 35px 0px 0px 0px;
 }
 /*Thiết Lập Cho Thành Phần Icon Mạng Xã Hội*/
 .social-icon{
@@ -296,4 +300,4 @@ footer{
 div>.menus {
     display: none;
 }
-}
+}   
