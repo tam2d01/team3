@@ -317,6 +317,9 @@ footer{
 }
 
 @media screen and (max-width: 768px){
+    .menus-icon{
+        padding : 25px  0px;
+    }
     .logo-brand{
         transform: translate(-5% , -30%);
     }
