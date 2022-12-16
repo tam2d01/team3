@@ -3,102 +3,49 @@
     padding: 0;
     box-sizing: border-box;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
-    font-weight: 800;
+    font-weight: 610;
 }
 /*menus + logo + icon*/
 header{ 
-    display:flex;
-    background-color: var(--bg_header);
-    gap: 50px;
     width: 100%;
+    height: 100px;
     position: fixed;
-
+    background: var(--text-wh);
+    z-index: 1000;
+    transition: .2s linear;
+}
+.header-container{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    transform:translate(5%, -20%);
 }
 /*logo */
-.logo{
-    display : inline;
-    padding : 15 px;
-    margin : 10px;
+.logo-brand img{
+    width: 160px;
+    display: block;
 }
 
 /*menus */
-.menus{
-    display:inline;
-    margin:0px;
-}
-.menus>a{
-    display:inline-block;
-    width: 90px;
-    max-height: 90px;   
-    line-height: 80px;
-    text-decoration: none;
-    margin:15px;
-    font-size: 18px;
-    color: var(--text_header);
+.topnav{
+    display: flex;
+    flex-wrap:nowrap;
+    overflow: hidden;
     gap: 50px;
 }
-.menus a:hover{
-    color: var(--color_hover);
-}
-.icon-bars{
-    display: none;
-}
-/*search */
-.search {
-    width: 100%;
-    position: relative;
-    display: inline-flex;
-}
-
-.searchTerm {
-    width: 100%;
-    border: 1px solid var(--text_header);
-    border-right: none;
-    padding: 5px;
-    height: 30px;
-    border-radius: 5px 0 0 5px;
-    outline: none;
-    color: var(--text_header);
-}
-
-.search-item{
-    width: 2.5rem;
-    height: auto;
-    background: var(--text_header);
+.topnav a{
+    display: block;
+    color: var(--text);
     text-align: center;
-    color: var(--text-wh);
-    border-radius: 0 5px 5px 0;
-    cursor: pointer;
-    font-size: 18px;
-    padding-top: 3px; 
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
 }
-
-.wrap{
-    display:inline;
-    width: 30%;
-    position: absolute;
-    top: 45%;
-    left: 60%;
-    transform: translate(-50%, -50%);
-}
-/* icon */
-.menus-icon{
-    display:inline;
-}
-.icon-item{
-    left:80%;
-    position:absolute;
-
-} 
-.icon-item a>.fa{
-    line-height: 5  ;
-    font-size: 1.4rem;
-    color:var(--text_header); 
-    margin-left: 2rem;
-}
-
-header .icon-item a:hover .fa{
+.topnav a:hover {
     color: var(--color_hover);
+}
+.topnav .icon-bars{
+    display: none;
 }
 footer{ 
     display: flex;
@@ -118,7 +65,7 @@ footer{
     justify-content: space-between;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 40px;
+    gap: 50px;
 }
 .footer .footer__wrapper .noi-dung.about{
     width: 40%;
@@ -142,9 +89,6 @@ footer{
 }
 .noi-dung.about p{
     color: var(--text);
-}
-.copyright-text{
-    padding: 35px 0px 0px 0px;
 }
 /*Thiết Lập Cho Thành Phần Icon Mạng Xã Hội*/
 .social-icon{
@@ -201,6 +145,12 @@ footer{
 .noi-dung-links ul li a:hover{
     color: var(--color_hover);
 }
+
+
+.copyright-text{
+    padding : 50px 0px 0px 0px;
+}
+
 /*Thiết Lập Thông Tin Liên Hệ*/
 .noi-dung-contact h2{
     position: relative;
@@ -273,12 +223,52 @@ footer{
     outline: 0;
     padding: 8px 4px;
 }
+
+/*.copyright */
+.copyright{
+    display:inline-flex;
+    height: 70px;
+    padding: 2%;
+    text-align: center;
+}
+.text-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+  /* The "responsive" class is added to the menus with JavaScript when the user clicks on the icon. This class makes the menus look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 768px) {
+    .topnav a{display: none;}
+    .topnav .search-container
+            {display: none;}
+
+    .topnav a.icon-bars {
+        float: left;
+        display: block;
+    }
+}
+
+@media (max-width: 768px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon-bars {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        padding: 10px 15px;
+    }
+    .topnav.responsive a,.topnav.responsive .search-container{
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
 /* Responsive Cho Footer */
 @media  (max-width: 768px){
     footer{
         padding: 40px;
             }
-    footer .container{
+    footer .footer__wrapper{
         flex-direction: column;
     }
     footer .container .noi-dung{
@@ -289,16 +279,3 @@ footer{
         width: 100%;
     }
 }
-/* Responsive Cho Header menus logo */
-@media  (max-width: 768px){
-    #nav-menus {
-    flex-direction: column;
-    text-align: center;
-}
-.icon-bars{
-    display: block;
-}
-div>.menus {
-    display: none;
-}
-}   
