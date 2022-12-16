@@ -16,22 +16,50 @@
     <header>
         <div class="header-container"> 
             <div class="logo-brand">
-                <a target="_top" href="#" ><img src="./assets/img/logo/_Pngtree_modern_pet_logo_-_love_5249404-removebg-preview.png" width="250px" height="auto"></a>
-            </div>
-            <div class="topnav" id="myTopnav">
-                <a href="#">Home</a>
-                <a href="#">News</a>
-                <a href="#">Contact</a>
-                <a href="#">About</a>
-                <a href="#" class="icon-bars" onclick="myBars()">
-                <i class="fa fa-bars" aria-hidden="true"></i>
+                <a target="_top" href="#" ><img src="./assets/img/logo/_Pngtree_modern_pet_logo_-_love_5249404-removebg-preview.png" width="77px" height="auto">
                 </a>
-                <div class="search-container">
-                        <form action="#">
-                            <input type="search" class="search-text" placeholder="Search..">
-                            <button type="submit" class="search-submit">Search</button>
-                            </form>
-                </div>
+            </div>
+            <nav>
+                <ul  class="main-menus" id="btn-menus">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li><a
+                        a href="#">News</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                </ul>
+            </nav>
+            <label for="nav-mobile-input" class="nav__bars-btn" id="toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <!--Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                    <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"></path></svg>
+            </label>
+            <input type="checkbox" class="nav-input" id="nav-mobile-input">
+            <!--coating-->
+            <div class="nav-mobile-overlay"></div>
+            <!--menus mobile-->
+            <div class="nav-mobile">
+                <label for="nav-mobile-input" class="nav-mobile-close">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                        <!-- Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                        <path d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z"></path></svg>
+                </label>
+                <ul class="menu__mobile-list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
             </div>
         <!--header icon-->
         <div class="menus-icon">
@@ -41,13 +69,11 @@
                 <a href="#" class="icon-user" onclick="myUse()">
                     <i class="fa fa-user-circle-o" aria-hidden="true"></i>
                 </a>   
-        </div>    
+        </div>  
     </header>
     <!--end of header-->
     <main class="home">
-        <div class="home__content">
-            <img src="./assets/img/nuoi-cho-meo_1912222544.jpg">
-        </div>
+        <img src="assets/img/tong-hop-cac-chi-phi-de-nuoi-cho-la-bao-nhieu-2.jpeg">
     </main>
     <footer>
         <div class="footer__wrapper">
@@ -114,6 +140,29 @@
     <!--Getting Started with Javascript-->
     <div id="app-js">
         <script src="./JS/main.js"></script>
-        <script src="./JS/menus.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('#toggle').click(function() {
+                    $('.nav-mobile-overlay').toggle();
+                });
+            })
+            $(document).ready(function() {
+                $('#toggle').click(function() {
+                    $('.nav-mobile').toggle();
+                });
+            })
+
+            $(document).ready(function() {
+                $('.nav-mobile-close').click(function() {
+                    $('.nav-mobile-overlay').toggle();
+                });
+            })
+            $(document).ready(function() {
+                $('.nav-mobile-close').click(function() {
+                    $('.nav-mobile').toggle();
+                });
+            })
+        </script>
     </div>
 </html>

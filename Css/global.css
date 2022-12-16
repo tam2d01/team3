@@ -2,51 +2,130 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
-    font-weight: 610;
+    font-family:  Arial; 
+    font-weight: 500;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all 0.2s;
 }
 /*menus + logo + icon*/
 header{ 
     width: 100%;
-    height: 100px;
+    height : 100px;
+    padding: 10px;
     position: fixed;
-    background: var(--text-wh);
+    background: var(--white);
     z-index: 1000;
-    transition: .2s linear;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 .header-container{
     display: flex;
-    align-items: center;
     gap: 100px;
-    transform:translate(5%, -20%);
+
 }
 /*logo */
+.logo-brand{
+    transform: translate(60% , -30%);
+    
+}
 .logo-brand img{
     width: 160px;
     display: block;
 }
-
-/*menus */
-.topnav{
+/*menus pc */
+nav .main-menus ul {
+    list-style-type: none;
+}
+nav .main-menus {
     display: flex;
-    flex-wrap:nowrap;
-    overflow: hidden;
-    gap: 50px;
+    gap : 50px;
+    padding : 10px 15px;
+
 }
-.topnav a{
-    display: block;
-    color: var(--text);
-    text-align: center;
-    padding: 14px 16px;
+nav {
+    background: var(--wh);
+}
+nav .main-menus li a {
+    color: var(--black);
     text-decoration: none;
-    font-size: 20px;
+    display: block;
+    padding: 8px 15px;
+    font-size: 18px;
 }
-.topnav a:hover {
-    color: var(--color_hover);
+nav .main-menus li:hover a,.menus-icon a:hover{
+    color: var(--red);
 }
-.topnav .icon-bars{
+/* menus icon */
+.menus-icon{
+    padding : 10px 15px;
+}
+.menus-icon a{
+    font-size: 1.5rem;
+    color: #333;
+    margin-left: 1.5rem;
+}  
+/* menus-mobile*/
+.nav__bars-btn {
+    width: 28px;
+    height: 28px;
+    color: #333;
+    margin-left: 8px;
     display: none;
 }
+.nav-input {
+    display: none;
+}
+.nav-mobile-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.3);
+    display: none;
+    animation: fadeIn linear 0.01s;
+    display: none;
+}
+.nav-mobile{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    max-width: 25%;
+    background: #fff;
+    transition: transform linear 0.5s;
+    display: none;
+}
+.nav-mobile-close {
+    height: 14px;
+    width: 14px;
+    color: #666;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+.menu__mobile-list{
+    margin-top: 24px;
+    list-style-type: none;
+    padding: 0 30px;
+    text-align: center;
+}
+.menu__mobile-list a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 8px 0;
+    font-size: 1.2rem;
+}
+.menu__mobile-list a:hover{
+    color: var(--red); 
+}
+/* footer */
 footer{ 
     display: flex;
     justify-content: flex-end;
@@ -57,7 +136,7 @@ footer{
     height: auto;
     padding: 50px 100px;
     margin:10px;
-    background-color: var(--bg_header);
+    background-color: var(--white);
     flex-wrap: wrap;
 }
 .footer__wrapper{
@@ -74,7 +153,7 @@ footer{
 .noi-dung.about>h2{
     position: relative;
     font-size: 25px;
-    color: var(--text);
+    color: var(--black);
     margin-bottom: 15px;
 }
 .noi-dung.about>h2:before{
@@ -85,12 +164,12 @@ footer{
     left: 0;
     width: 50px;
     height: 2px;
-    background: #f00;
+    background: var(--red);
 }
 .noi-dung.about p{
-    color: var(--text);
+    color: var(--black);
 }
-/*Thiết Lập Cho Thành Phần Icon Mạng Xã Hội*/
+/*Set For Social Network Icon Component*/
 .social-icon{
     margin-top: 20px;
     display: flex;
@@ -111,16 +190,16 @@ footer{
     border-radius: 20px;
 }
 .social-icon li a:hover{
-    background: var(--color_hover);
+    background: var(--red);
 }
 .social-icon li a .fa{
-    color: #fff;
+    color: var(--white);
     font-size: 18px;
 }
-/*Thiết Lập Đường dẫn link*/
+/*Setting Up Links*/
 .noi-dung-links h2{
     position: relative;
-    color: var(--text);
+    color: var(--black);
     font-size: 25px;
     margin-bottom: 15px;
 }
@@ -131,7 +210,7 @@ footer{
     left: 0;
     width: 50px;
     height: 2px;
-    background: #f00;
+    background: var(--red);
 }
 .noi-dung-links ul li{
     list-style: none
@@ -143,7 +222,7 @@ footer{
     display: inline-block;
 }
 .noi-dung-links ul li a:hover{
-    color: var(--color_hover);
+    color: var(--red);
 }
 
 
@@ -151,10 +230,10 @@ footer{
     padding : 50px 0px 0px 0px;
 }
 
-/*Thiết Lập Thông Tin Liên Hệ*/
+/*Set Up Contact Information*/
 .noi-dung-contact h2{
     position: relative;
-    color: var(--text);
+    color: var(--black);
     margin-bottom: 15px;
     font-size: 25px;
 }
@@ -165,7 +244,7 @@ footer{
     left: 0;
     width: 50px;
     height: 2px;
-    background: #f00;
+    background: var(--red);
 }
 .contact .info{
     position: relative;
@@ -175,18 +254,18 @@ footer{
     margin-bottom: 16px;
 }
 .noi-dung-contact .info li span:nth-child(1) {
-    color: var(--text);
+    color: var(--black);
     font-size: 20px;
     margin-right: 10px;
 }
 .noi-dung-contact .info li span{
-    color:var(--text);
+    color:var(--black);
 }
 .noi-dung-contact .info li a{
-    color: var(--text);
+    color: var(--black);
     text-decoration: none;
 }
-/* Thiết Lập Phần Email Subscribe */
+/* Set Up Email Subscribe */
 .btn {
     display: inline-block;
     background: transparent;
@@ -201,21 +280,21 @@ footer{
 }
 .btn--primary {
     background: #222;
-    color: #fff;
+    color: var(--white);
     box-shadow: 0 0 10px 2px rgba(0, 0, 0, .1);
     border-radius: 2px;
     padding: 8px 24px;
 }
 .btn--primary:hover {
-    background: #f00;
+    background: var(--red);
 }
 .btn--primary:active {
-    background: #f00;
+    background: var(--red);
     box-shadow: inset 0 0 10px 2px rgba(0, 0, 0, .2);
 }
 .form__field {
     width: 90%;
-    background: #fff;
+    background: var(--white);
     color: #a3a3a3;
     font: inherit;
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, .1);
@@ -237,32 +316,29 @@ footer{
     align-items: center;
 }
 
-  /* The "responsive" class is added to the menus with JavaScript when the user clicks on the icon. This class makes the menus look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 768px) {
-    .topnav a{display: none;}
-    .topnav .search-container
-            {display: none;}
+@media screen and (max-width: 768px){
+    .logo-brand{
+        transform: translate(-5% , -30%);
+    }
+    .nav__bars-btn{
+        transform: translate(-200% , 60%);
+    }
 
-    .topnav a.icon-bars {
-        float: left;
+    nav {
+        display: none;
+    }
+    .nav-mobile{
+        display: none;
+    }
+    .nav__bars-btn {
+        display: block;
+    }
+    .nav__bars-btn {
         display: block;
     }
 }
 
-@media (max-width: 768px) {
-    .topnav.responsive {position: relative;}
-    .topnav.responsive .icon-bars {
-        position: absolute;
-        left: 0px;
-        top: 0px;
-        padding: 10px 15px;
-    }
-    .topnav.responsive a,.topnav.responsive .search-container{
-        float: none;
-        display: block;
-        text-align: left;
-    }
-}
+
 /* Responsive Cho Footer */
 @media  (max-width: 768px){
     footer{
