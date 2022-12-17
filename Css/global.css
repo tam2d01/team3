@@ -66,7 +66,7 @@ nav .main-menus li:hover a,.menus-icon a:hover{
 .menus-icon a{
     font-size: 1.5rem;
     color: #333;
-    margin-left: 1.5rem;
+    margin-left: 1.3rem;
 }  
 /* menus-mobile*/
 .nav__bars-btn {
@@ -99,11 +99,11 @@ nav .main-menus li:hover a,.menus-icon a:hover{
     left: 0;
     max-width: 25%;
     background: #fff;
-    transition: transform linear 0.5s;
+    transition: linear 0.5s;
     display: none;
 }
 .nav-mobile-close {
-    height: 14px;
+    height: 14px;   
     width: 14px;
     color: #666;
     position: absolute;
@@ -317,7 +317,12 @@ footer{
     justify-content: center;
     align-items: center;
 }
-
+/* max-width: 991 */
+@media screen and (max-width: 991px){
+header{
+    display :inline-flex;
+}}
+/* max-width: 768 */
 @media screen and (max-width: 768px){
     .menus-icon{
         padding : 25px  0px;
@@ -326,7 +331,9 @@ footer{
         transform: translate(-5% , -30%);
     }
     .nav__bars-btn{
-        transform: translate(-200% , 60%);
+        position : relative;
+        top : 10%;
+        transform: translate(-200% , 50%);
     }
 
     nav {
@@ -342,7 +349,26 @@ footer{
         display: block;
     }
 }
+/* max-width: 480 */
+@media screen and ( max-width: 480px ){
+    header{
+        display : flex;
+        gap : 1em;
+    }
+    .menus-icon{
+        position : relative;
+        right : 30%
+    }
+    .logo-brand{
+        position: relative;
+        bottom : 20%;
+    }
+    .nav__bars-btn{
+        position: relative;
+        right : 10%
+    }
 
+}
 
 /* Responsive Cho Footer */
 @media  (max-width: 768px){
