@@ -1,0 +1,355 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family:  poppins;
+    
+}
+
+
+
+/* start banner */
+#banner {
+    display: flex;
+    background-image: url(./img/slider1-1.webp);
+    height: 80vh;
+    width: 100%;
+    background-size: cover;
+    padding: 0 80px;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+#banner p {
+    padding-bottom: 50px;
+}
+#banner button {
+    width: 120px;
+    height: 40px;
+    margin-top: 20px;
+    background: rgb(241, 239, 239) ;
+    border: none;
+    color: rgb(4, 11, 19);
+    outline: none;
+    font-weight: bold;
+    border-radius: 20px;
+    transition: 1s;
+}
+#banner button:hover {
+    background: rgb(192, 10, 10);
+    color: black;
+    cursor: pointer;
+}
+
+/* end banner */
+
+.container {
+    margin-top: 50px;
+    width: 100%;
+}
+
+.box-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.single-wrapper {
+    border-radius: 20px;
+    background: #f4f4f4;
+    padding: 30px 28px 25px;
+    text-align: center;
+    width: 230PX;
+    height: 198px;
+}
+
+.single-wrapper:hover {
+    box-shadow: 10px 10px 54px rgba(70, 62, 221, 0.1);
+}
+.box-content .title {
+    
+    font-size: 16px;
+    font-weight: 500 bold;
+    text-transform: uppercase;
+}
+
+.box-content p {
+    font-size: 14px;
+}
+
+.box-icon {
+    color: rgb(15, 15, 15);
+    text-shadow: 1px 1px 1px rgb(99, 96, 96);
+    font-size: 60px;
+}
+
+      /* end-wrapper */
+
+
+/* start product */
+
+
+#container-1 {
+    
+}
+#product-1 {
+    margin-top: 80px;
+    text-align: center;
+}
+#product-1 h2 {
+    font-size: 50px;
+    margin: 0 auto;
+}
+#product-1 p {
+    margin-top: 10px;
+    color: rgb(87, 79, 69);
+}
+#product-1 .container-1 {
+    display: flex;
+    justify-content: space-around;
+    
+    flex-wrap: wrap;
+}
+
+#product-1 .product {
+       
+    flex-basis: 20%;
+    border: 1px solid rgb(27, 67, 120);
+    background-color: rgb(250, 249, 248);
+    margin-top: 70px;
+    border-radius: 20px;
+   
+    cursor: pointer;
+    transition: 0.2s ease;
+    align-items: center;
+}
+#product-1 .product:hover {
+    box-shadow: 5px 5px 5px rgb(193, 166, 166);
+}
+#product-1 .product img {
+   
+    width: 100%;
+    height: 70%;
+    border-radius: 20px;
+   
+}
+
+#product-1 .product .des i {
+    color: rgb(223, 223, 23);
+}
+#product-1 .product .des h5 {
+    margin: 10px;
+}
+#product-1 .product .des h4 {
+    color: rgb(56, 194, 148);
+    margin: 5px;
+}
+#product-1 .product .fa-cart-shopping {
+    color: rgb(59, 57, 57);
+}
+
+
+/* end list product */
+
+/* :start banner sale off */
+
+#banner-saleoff {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url(./img/th\ \(1\).jpg);
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    
+}
+
+#banner-saleoff h4 {
+color: aliceblue;
+}
+#banner-saleoff h2 {
+    margin: 0px auto;
+    font-size: 50px;
+    color: rgb(230, 218, 218);
+}
+#banner-saleoff h2 span {
+    font-size: 100px;
+    color: red;
+}
+
+/* comment customer */
+a {
+    text-decoration: none;
+}
+    
+#comment {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.heading-comment {
+    letter-spacing: 1px;
+    margin: 30px 0px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.heading-comment span {
+    font-size: 1.3rem;
+    color: black;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.comment-box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.comment-box {
+    width: 500px;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 15px;
+    cursor: pointer;
+}
+
+.profile-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.profile-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.name-user{
+    display: flex;
+    flex-direction: column;
+}
+
+.name-user strong {
+    color: #3d3d3d;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+
+.name-user span {
+    color: #979797;
+    font-size: 0.8rem;
+}
+
+.reviews {
+    color: #f9d71c;
+}
+
+.box-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.client-comment p {
+    font-size: 0.9rem;
+    color: #4b4b4b;
+
+}
+
+.comment-box:hover {
+    transform: translateY(-10px);
+    transition: all ease 0.3s;
+}
+
+
+
+/* start cart */
+
+.cart {
+    display: flex;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    align-items: center;
+    width: 200px;
+    min-height: 40vh;
+    padding: 20px;
+    background: white;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid rgb(9, 7, 7);
+    border-radius: 15px;
+}
+
+.cart-tittle {
+    margin-top: 23px;
+    text-align: center;
+    font-size: 20px  !important ;
+}
+
+.cart .cart-content .cart-box img {
+    max-width: 50px;
+    border-radius: 10px;
+}
+
+.cart-quantity {
+    border: 1px solid rgb(17, 16, 16);
+    border-radius: 5px;
+    width: 40px;
+    
+}
+
+@media screen and (max-width: 768px) {
+    #banner {
+        display: flex;
+        background-image: url(./img/slider1-1.webp);
+        height: 80vh;
+        width: 100%;
+        background-size: cover;
+        padding: 0 80px;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+    }
+    #product-1 .container-1 {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .box-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    }
+    }
