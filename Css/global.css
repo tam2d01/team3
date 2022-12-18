@@ -327,16 +327,20 @@ header{
 }
 /* max-width: 768 */
 @media screen and (max-width: 768px){
-    
-
+    .logo-brand{
+        margin-left:-2rem ;
+    }
+    .nav__bars-btn{
+        margin-left: -2rem;
+    }
+    .menus-icon{
+        margin-left: -6rem;
+    }
     nav {
         display: none;
     }
     .nav-mobile{
         display: none;
-    }
-    .nav__bars-btn {
-        display: block;
     }
     .nav__bars-btn {
         display: block;
