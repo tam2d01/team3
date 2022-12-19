@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Shop</title>
+    <link rel="stylesheet" href="./assets/font-icon/font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="Css/global.css">
+    <link rel="stylesheet" href="/Css/reset.css">
+    <link rel="stylesheet" href="/Css/style.css">
+    <link rel="stylesheet" href="/Css/var.css">
+</head>
+<body>
+    <!--header logo-->
+    <header> 
+            <div class="logo-brand">
+                <a target="_top" href="#" ><img src="./assets/img/logo/Animated-Petshop-Logo-removebg-preview.png" width="10px" height="auto">
+                </a>
+            </div>
+            <nav>
+                <ul  class="main-menus" id="btn-menus">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li><a
+                        a href="#">News</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                </ul>
+            </nav>
+            <label for="nav-mobile-input" class="nav__bars-btn" id="toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <!--Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                    <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"></path></svg>
+            </label>
+            <input type="checkbox" class="nav-input" id="nav-mobile-input">
+            <!--coating-->
+            <div class="nav-mobile-overlay"></div>
+            <!--menus mobile-->
+            <div class="nav-mobile">
+                <label for="nav-mobile-input" class="nav-mobile-close">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                        <!-- Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                        <path d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z"></path></svg>
+                </label>
+                <ul class="menu__mobile-list">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+        <!--header icon-->
+        <div class="menus-icon">
+                <a href="#" class="icon-shopping" onclick="myShopping()">
+                    <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                </a>
+                <a href="#" class="icon-user" onclick="myUse()">
+                    <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                </a> 
+                <a href="#" class="icon-bell" onclick="myBell()">
+                    <i class="fa fa-bell" aria-hidden="true"></i>
+                </a>  
+        </div>  
+    </header>
+    <!--end of header-->
+    <main class="home">
+        <img src="./assets/img/nuoi-cho-meo_1912222544.jpg">
+    </main>
+    <footer>
+        <div class="footer__wrapper">
+            <!--Getting Started Intro Content--> 
+            <div class="noi-dung about">
+                <h2>About us</h2>
+                <p><p>Follow us on social media for more details and updates.</p></p>
+                <ul class="social-icon">
+                    <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                    <li><a href=""><i class="fa fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fa fa-youtube"></i></a></li>
+                </ul>
+            </div>
+            <!--End of Introduction-->
+            <!--Start Link Content-->
+            <div class="noi-dung-links">
+                <h2>Path</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Policy Conditions</a></li>
+                </ul>
+            </div>
+            <!--End of Introduction-->
+            <!--Where to Get Contact Content-->
+            <div class="noi-dung-contact">
+                <h2>Contact Info</h2>
+                <ul class="info">
+                    <li>
+                        <span><i class="fa fa-map-marker"></i></span>
+                        <span>1st Street<br />
+                            District 1, Ho Chi Minh City<br />
+                            Vietnam</span>
+                    </li>
+                    <li>
+                        <span><i class="fa fa-phone"></i></span>
+                        <p><a href="#">+84 123 456 789</a>
+                            <br />
+                            <a href="#">+84 123 456 789</a></p>
+                    </li>
+                    <li>
+                        <span><i class="fa fa-envelope"></i></span>
+                        <p><a href="#">diachiemail@gmail.com</a></p>
+                    </li>
+                    <li>
+                        <form class="form" action="#">
+                            <input type="email" class="form__field" placeholder="Get more info..." />
+                            <button type="button" class="btn btn--primary  uppercase">Gửi</button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+            </div>
+            <!--End of Contact Content-->
+        </div>
+        <div class="copyright text-center">
+            <p> ©Copyright 2022 | Pham Tam and  Tuan Anh | All rights.</p>
+        </div>
+    </footer>
+</body>
+    <!--Getting Started with Javascript-->
+    <div id="app-js">
+        <script src="./JS/main.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <!-- handle menus-->
+        <script>
+            $(document).ready(function() {
+                $('.nav__bars-btn').click(function() {
+                    $('.nav-mobile-overlay').toggle();
+                });
+            })
+            $(document).ready(function() {
+                $('.nav__bars-btn').click(function() {
+                    $('.nav-mobile').slideToggle();
+                });
+            })
+
+            $(document).ready(function() {
+                $('.nav-mobile-close').click(function() {
+                    $('.nav-mobile-overlay').toggle();
+                });
+            })
+            $(document).ready(function() {
+                $('.nav-mobile-close').click(function() {
+                    $('.nav-mobile').slideToggle();
+                });
+            })
+        </script>
+    </div>
+</html>
